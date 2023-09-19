@@ -1,3 +1,5 @@
 Control Color/test/userPreferences.*
 Control Color/.vs/*
 Control Color/Objs/*
+Control Color/build/*
+Control Color/test/Project/DerivedData/CompiledCode/*
