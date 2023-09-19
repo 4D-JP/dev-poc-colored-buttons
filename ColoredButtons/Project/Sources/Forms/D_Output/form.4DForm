@@ -1,0 +1,121 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onMenuSelect",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bPowerSearch": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 51,
+					"width": 36,
+					"height": 36,
+					"sizingY": "move",
+					"dataSource": "bFBM_AddressQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/:26210,7"
+					},
+					"columnCount": 1,
+					"picture": "/RESOURCES/Images/library/_GEN_MenuBttn_Search.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"rowCount": 4
+				},
+				"bh_Delete": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 102,
+					"width": 33,
+					"height": 33,
+					"sizingY": "move",
+					"dataSource": "bh_Delete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/:26210,2"
+					},
+					"columnCount": 1,
+					"picture": "/RESOURCES/Images/library/_GEN_Bttn_Trash.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"rowCount": 4
+				},
+				"bh_Add": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 8,
+					"width": 33,
+					"height": 33,
+					"sizingY": "move",
+					"dataSource": "bh_Add",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/:26210,1"
+					},
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"columnCount": 1,
+					"picture": "/RESOURCES/Images/library/_GEN_Bttn_AddRecord.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"rowCount": 4
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "Ebene 1",
+		"defaultView": "Ebene 1",
+		"views": {
+			"Ebene 1": {},
+			"Ebene 2": {},
+			"Ebene 3": {},
+			"Ebene 4": {},
+			"Ebene 5": {},
+			"Ebene 6": {},
+			"Ebene 7": {},
+			"Ebene 8": {},
+			"Ebene 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 147
+}
