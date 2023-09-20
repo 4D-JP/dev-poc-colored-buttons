@@ -13,3 +13,5 @@ a little proof-of-concept.
 * `controlAccentColor` is only available on macOS 10.14 or newer
 * 4D SVG rendering engine does not seem to accept `hsl(0, 100%, 50%)` style color.
 * the valid sytax of the [`picture`](https://developer.4d.com/docs/FormObjects/propertiesPicture#pathname) property is url`("{posix}")`
+
+https://stackoverflow.com/questions/63159666/get-windows-10-theme-color-in-classic-c-winapi-win32-application
