@@ -10,6 +10,7 @@ a little proof-of-concept.
 
 ### get Windows accent colour
 
+* [UISettings.GetColorValue(UIColorType)](https://learn.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.uisettings.getcolorvalue?view=winrt-22621)
 * c.f. https://stackoverflow.com/questions/63159666/get-windows-10-theme-color-in-classic-c-winapi-win32-application
  
 ### get macOS accent colour
