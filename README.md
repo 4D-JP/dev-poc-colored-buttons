@@ -11,11 +11,13 @@ a little proof-of-concept.
 ### get Windows accent colour
 
 * [UISettings.GetColorValue](https://learn.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.uisettings.getcolorvalue?view=winrt-22621)
+* RGBA is `0-255`
 * c.f. https://stackoverflow.com/questions/63159666/get-windows-10-theme-color-in-classic-c-winapi-win32-application
  
 ### get macOS accent colour
 
 * [controlAccentColor](https://developer.apple.com/documentation/appkit/nscolor/3000782-controlaccentcolor)
+* rgba is `0.0-1.0`
 * c.f. [MacAccentColorCatalyst](https://github.com/DylanMcD8/MacAccentColorCatalyst/tree/main)
 
 ## Note
