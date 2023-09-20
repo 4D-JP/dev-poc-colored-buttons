@@ -13,7 +13,12 @@
 
 #include "4DPluginAPI.h"
 
+#if VERSIONMAC
 #import <Cocoa/Cocoa.h>
+#else
+#include <winrt/Windows.UI.ViewManagement.h>
+#include <iostream>
+#endif
 
 #include "4DPlugin-JSON.h"
 

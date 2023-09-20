@@ -26,6 +26,7 @@
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCpp</CompileAs>
     </ClCompile>
     <ClCompile Include="4DPlugin-Control-Color.cpp" />
+    <ClCompile Include="support\4DPlugin-JSON.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4D Plugin API\4DPluginAPI.h" />
@@ -34,6 +35,7 @@
     <ClInclude Include="4D Plugin API\PrivateTypes.h" />
     <ClInclude Include="4D Plugin API\PublicTypes.h" />
     <ClInclude Include="4DPlugin-Control-Color.h" />
+    <ClInclude Include="support\4DPlugin-JSON.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="4D Plugin API\4DPluginAPI.def" />
@@ -137,7 +139,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir);4D Plugin API\Classes;4D Plugin API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);support;include;include\windows;4D Plugin API\Classes;4D Plugin API;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_WINDOWS;_USRDLL;MY4DPLUGIN_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -149,6 +151,7 @@
       <CompileAs>Default</CompileAs>
       <OmitFramePointers>false</OmitFramePointers>
       <DisableSpecificWarnings>4146;4018;4800;4244;4068;4267</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <OutputFile>$(TargetPath)</OutputFile>
@@ -195,6 +198,7 @@
       <CallingConvention>Cdecl</CallingConvention>
       <OmitFramePointers>false</OmitFramePointers>
       <DisableSpecificWarnings>4146;4018;4800;4244;4068;4267</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <OutputFile>$(TargetPath)</OutputFile>

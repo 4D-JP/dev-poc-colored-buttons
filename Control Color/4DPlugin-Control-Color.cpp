@@ -35,7 +35,14 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params) {
 
 #pragma mark -
 
+#if VERSIONWIN
+using namespace winrt;
+using namespace Windows::UI::ViewManagement;
+#endif
+
 void Get_control_color(PA_PluginParameters params) {
+
+#if VERSIONMAC
 
     CGFloat r, g, b, a;
     
@@ -47,6 +54,21 @@ void Get_control_color(PA_PluginParameters params) {
         [controlAccentColor getRed:&r green:&g blue:&b alpha:&a];
     }
     
+#else
+
+    double r, g, b, a;
+
+    UISettings const ui_settings{};
+    auto const accent_color{ ui_settings.GetColorValue(UIColorType::Accent) };
+    r = accent_color.R;
+    g = accent_color.G;
+    b = accent_color.B;
+    a = accent_color.A;
+    r = r / 255;
+    g = g / 255;
+    b = b / 255;
+    a = a / 255;
+#endif
 
     
     PA_ObjectRef returnValue = PA_CreateObject();
