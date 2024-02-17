@@ -1,7 +1,7 @@
 ![version](https://img.shields.io/badge/version-19%2B-5682DF)
 ![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-64&color=blue)
 [![license](https://img.shields.io/github/license/4D-JP/dev-poc-colored-buttons)](LICENSE)
-![downloads](https://img.shields.io/github/downloads/D-JP/dev-poc-colored-buttons/total)
+![downloads](https://img.shields.io/github/downloads/4D-JP/dev-poc-colored-buttons/total)
 
 # dev-poc-colored-buttons
 a little proof-of-concept.
